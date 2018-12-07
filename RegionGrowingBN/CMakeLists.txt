@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( region )
+find_package( OpenCV REQUIRED )
+add_executable( region region.cpp )
+target_link_libraries( region ${OpenCV_LIBS} )

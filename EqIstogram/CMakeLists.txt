@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( eqistogramma )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( eqistogramma eqistogramma.cpp )
+target_link_libraries( eqistogramma ${OpenCV_LIBS} )
